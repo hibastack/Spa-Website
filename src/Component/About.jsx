@@ -79,7 +79,7 @@ const About = () => {
 
           <div className='grid w-full gap-2'>
 
-            <img loading="lazy"
+            <img fetchpriority="high"
               className='
                 h-40 
                 sm:h-48 
@@ -97,7 +97,7 @@ const About = () => {
               alt='About Us'
             />
 
-            <img loading="lazy"
+            <img fetchpriority="high"
               className='
                 h-40 
                 sm:h-48 
@@ -115,7 +115,7 @@ const About = () => {
               alt='About Us'
             />
 
-            <img loading="lazy"
+            <img fetchpriority="high"
               className='
                 h-40 
                 sm:h-48 

@@ -19,7 +19,7 @@ const Navbar = () => {
               hover:shadow-xl
               hover:-translate-y-2
       "
-      loading="lazy"
+      fetchpriority="high"
       style={{ backgroundImage: `url(${spaimg1})` }}
     >
 

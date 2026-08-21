@@ -16,28 +16,23 @@ import Contactform from './Component/Contactform'
 import Servicepage from './Component/Servicepage'
 import Aboutpage from './Component/Aboutpage'
 
-import { Routes, Route } from "react-router-dom"
-
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function Home() {
   return (
     <div>
-
       {/* Navbar */}
       <div>
         <Navbar />
       </div>
-
 
       {/* About */}
       <div className='mt-16 sm:mt-20'>
         <About />
       </div>
 
-
       {/* Services */}
       <div className='mt-16 sm:mt-20'>
-
         <h1 className='
           mt-10
           flex
@@ -51,7 +46,6 @@ function Home() {
         '>
           Services
         </h1>
-
 
         <div className='
           grid
@@ -68,83 +62,46 @@ function Home() {
           text-white
           text-center
         '>
-
           <Service
-          className="shadow-md
-              transition
-              duration-300
-              hover:shadow-xl
-              hover:-translate-y-2"
+            className="shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-2"
             style={{ backgroundImage: `url(${img7})` }}
             name="Hot Stone Massage"
             description="Warm stones and gentle massage techniques help relax muscles and melt away stress."
           />
 
           <Service
-           className="shadow-md
-              transition
-              duration-300
-              hover:shadow-xl
-              hover:-translate-y-2"
+            className="shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-2"
             style={{ backgroundImage: `url(${img6})` }}
             name="Express Facial & Sheet Mask"
             description="A refreshing facial with a hydrating sheet mask to leave your skin soft, fresh and glowing."
           />
 
           <Service
-           className="shadow-md
-              transition
-              duration-300
-              hover:shadow-xl
-              hover:-translate-y-2"
+            className="shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-2"
             style={{ backgroundImage: `url(${img9})` }}
             name="Back Relaxation Massage"
             description="Gentle massage focused on the back and waist area to ease everyday tension and promote relaxation."
           />
 
           <Service
-           className="shadow-md
-              transition
-              duration-300
-              hover:shadow-xl
-              hover:-translate-y-2"
+            className="shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-2"
             style={{ backgroundImage: `url(${img8})` }}
             name="Deep Relaxation Back Massage"
             description="A soothing full-back massage designed to release muscle tension and provide deep relaxation."
           />
-
         </div>
-
       </div>
-
 
       {/* Pricing */}
       <div className='mt-16 sm:mt-20'>
-
-        <div className='
-          flex
-          flex-col
-          items-center
-          text-center
-          px-5
-        '>
-
-          <h1 className='
-            mt-5
-            text-3xl
-            sm:text-4xl
-            lg:text-5xl
-            font-bold
-          '>
+        <div className='flex flex-col items-center text-center px-5'>
+          <h1 className='mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold'>
             Find Your Treatment
           </h1>
-
           <p className='mt-6 text-base sm:text-lg'>
             Discover the perfect treatment for your needs
           </p>
-
         </div>
-
 
         {/* Pricing Cards */}
         <div className='
@@ -159,7 +116,6 @@ function Home() {
           lg:px-16
           font-bold
         '>
-
           <Pricing
             name="Basic Package"
             price="$50"
@@ -189,15 +145,11 @@ function Home() {
               "Full Body Reflexology Therapy"
             ]}
           />
-
         </div>
-
       </div>
-
 
       {/* Reviews */}
       <div className='mt-16 sm:mt-20'>
-
         <h1 className='
           mt-16
           sm:mt-20
@@ -212,7 +164,6 @@ function Home() {
           Love By Our Clients
         </h1>
 
-
         <div className='
           mt-8
           mx-5
@@ -223,46 +174,32 @@ function Home() {
           text-center
           font-semibold
         '>
-
           <WhyChooseUs
             message="Absolutely loved my experience! The massage was so relaxing, the staff was incredibly kind, and the whole place had such a peaceful atmosphere. I left feeling completely refreshed!"
             customerName="— Emily R."
           />
-
         </div>
-
       </div>
-
 
       {/* Footer */}
       <div className='mt-16 sm:mt-20'>
         <Footer />
       </div>
-
     </div>
-  )
+  );
 }
-
 
 function App() {
   return (
-    <Routes>
-
-      {/* Home Page */}
-      <Route path="/" element={<Home />} />
-
-      {/* About Page */}
-      <Route path="/Aboutpage" element={<Aboutpage />} />
-
-      {/* Services Page */}
-      <Route path="/Servicepage" element={<Servicepage />} />
-
-      {/* Booking Page */}
-      <Route path="/Contactform" element={<Contactform />} />
-
-    </Routes>
-  )
+    <HashRouter>
+      <Routes>
+      
+        <Route path="/Aboutpage" element={<Aboutpage />} />
+        <Route path="/Servicepage" element={<Servicepage />} />
+        <Route path="/Contactform" element={<Contactform />} />
+      </Routes>
+    </HashRouter>
+  );
 }
 
-
-export default App
+export default App;

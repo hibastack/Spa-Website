@@ -3,7 +3,9 @@ import React from 'react'
 const Pricing = (props) => {
   return (
 
-    <div className="
+    <div 
+    fetchpriority="high"
+    className="
       w-full
       max-w-sm
       min-h-96

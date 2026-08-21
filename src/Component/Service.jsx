@@ -4,7 +4,7 @@ const Service = (props) => {
   return (
     <div className="w-full">
 
-      <div
+      <div fetchpriority="high"
         style={props.style}
         className="
           w-full
