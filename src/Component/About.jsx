@@ -75,11 +75,11 @@ const About = () => {
 
 
         {/* Images Section */}
-        <div className='w-full lg:w-1/2'>
+        <div  className='w-full lg:w-1/2'>
 
           <div className='grid w-full gap-2'>
 
-            <img
+            <img loading="lazy"
               className='
                 h-40 
                 sm:h-48 
@@ -87,12 +87,17 @@ const About = () => {
                 w-full 
                 rounded-2xl 
                 object-cover
+                shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2
               '
               src={aboutimg}
               alt='About Us'
             />
 
-            <img
+            <img loading="lazy"
               className='
                 h-40 
                 sm:h-48 
@@ -100,12 +105,17 @@ const About = () => {
                 w-full 
                 rounded-2xl 
                 object-cover
+                shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2
               '
               src={imgabout2}
               alt='About Us'
             />
 
-            <img
+            <img loading="lazy"
               className='
                 h-40 
                 sm:h-48 
@@ -113,6 +123,11 @@ const About = () => {
                 w-full 
                 rounded-2xl 
                 object-cover
+                shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2
               '
               src={imgabout3}
               alt='About Us'

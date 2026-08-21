@@ -19,6 +19,11 @@ const Service = (props) => {
           items-center
           justify-center
           p-5
+           shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2
           sm:p-8
         "
       >

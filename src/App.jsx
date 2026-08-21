@@ -70,24 +70,44 @@ function Home() {
         '>
 
           <Service
+          className="shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2"
             style={{ backgroundImage: `url(${img7})` }}
             name="Hot Stone Massage"
             description="Warm stones and gentle massage techniques help relax muscles and melt away stress."
           />
 
           <Service
+           className="shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2"
             style={{ backgroundImage: `url(${img6})` }}
             name="Express Facial & Sheet Mask"
             description="A refreshing facial with a hydrating sheet mask to leave your skin soft, fresh and glowing."
           />
 
           <Service
+           className="shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2"
             style={{ backgroundImage: `url(${img9})` }}
             name="Back Relaxation Massage"
             description="Gentle massage focused on the back and waist area to ease everyday tension and promote relaxation."
           />
 
           <Service
+           className="shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2"
             style={{ backgroundImage: `url(${img8})` }}
             name="Deep Relaxation Back Massage"
             description="A soothing full-back massage designed to release muscle tension and provide deep relaxation."
@@ -150,7 +170,7 @@ function Home() {
             ]}
           />
 
-          <Pricing
+          <Pricing 
             name="Premium Package"
             price="$100"
             features={[

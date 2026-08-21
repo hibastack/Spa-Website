@@ -40,7 +40,7 @@ const Aboutpage = () => {
             Heaven Like
           </h1>
 
-          <img
+          <img loading="lazy"
             src={newimg7}
             alt=""
             className='
@@ -106,7 +106,7 @@ const Aboutpage = () => {
 
         {/* Card 1 */}
         <div>
-          <img
+          <img loading="lazy"
             src={newimg2}
             alt=""
             className='
@@ -149,7 +149,7 @@ const Aboutpage = () => {
 
         {/* Card 2 */}
         <div>
-          <img
+          <img loading="lazy"
             src={newimg3}
             alt=""
             className='
@@ -192,7 +192,7 @@ const Aboutpage = () => {
 
         {/* Card 3 */}
         <div>
-          <img
+          <img loading="lazy"
             src={newimg4}
             alt=""
             className='
@@ -236,7 +236,7 @@ const Aboutpage = () => {
 
         {/* Card 4 */}
         <div>
-          <img
+          <img loading="lazy"
             src={newimg5}
             alt=""
             className='
@@ -279,7 +279,7 @@ const Aboutpage = () => {
 
         {/* Card 5 */}
         <div>
-          <img
+          <img loading="lazy"
             src={newimg6}
             alt=""
             className='
@@ -322,7 +322,7 @@ const Aboutpage = () => {
 
         {/* Card 6 */}
         <div>
-          <img
+          <img loading="lazy"
             src={newimg8}
             alt=""
             className='

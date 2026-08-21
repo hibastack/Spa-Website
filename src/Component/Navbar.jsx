@@ -13,7 +13,13 @@ const Navbar = () => {
         bg-cover
         bg-center
         bg-no-repeat
+        shadow-md
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2
       "
+      loading="lazy"
       style={{ backgroundImage: `url(${spaimg1})` }}
     >
 

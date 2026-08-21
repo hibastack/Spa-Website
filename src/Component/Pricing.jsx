@@ -16,6 +16,11 @@ const Pricing = (props) => {
       rounded-lg
       shadow-md
       mt-10
+     
+              transition
+              duration-300
+              hover:shadow-xl
+              hover:-translate-y-2
     ">
 
       <div className="
